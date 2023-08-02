@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dW9-vZ-8KG">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -9,12 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Signup-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Web3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Signup" id="BYZ-38-t0r" customClass="CreateaccountViewController" customModule="Web3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nero-low-resolution-logo-color-on-transparent-background" translatesAutoresizingMaskIntoConstraints="NO" id="7e8-gg-NCg">
@@ -69,16 +69,24 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Signup">
                                     <color key="baseForegroundColor" red="0.1647058874" green="0.3686274886" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZpR-bK-xqf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Erg-Ad-gT2"/>
+                    <connections>
+                        <outlet property="signuppasswordtextfield" destination="yW7-An-WQA" id="EVy-k6-W61"/>
+                        <outlet property="signuptextfield" destination="Mq7-6v-ah5" id="h6G-v2-U1F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XHt-3n-EUj">
@@ -95,27 +103,52 @@
             </objects>
             <point key="canvasLocation" x="2311" y="517"/>
         </scene>
-        <!--View Controller-->
+        <!--Animation-->
         <scene sceneID="P77-VW-5yq">
             <objects>
-                <viewController id="dW9-vZ-8KG" sceneMemberID="viewController">
+                <viewController title="Animation" id="dW9-vZ-8KG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Elf-yN-eSN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8n-iA-Sof">
+                                <rect key="frame" x="16" y="641" width="361" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Login">
+                                    <color key="baseForegroundColor" red="0.1647058874" green="0.3686274886" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ne1-w1-MI8" kind="showDetail" id="v4Q-eN-Ox3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmD-gs-aM0">
+                                <rect key="frame" x="16" y="684" width="361" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Signup">
+                                    <color key="baseForegroundColor" red="0.1647058874" green="0.3686274886" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zWK-06-NX1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7XJ-ko-yYU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Item" id="wj1-uc-jTe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0VR-h4-yFD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601" y="335"/>
+            <point key="canvasLocation" x="206.87022900763358" y="-216.90140845070422"/>
         </scene>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="kx0-rP-RIB">
             <objects>
-                <viewController id="ne1-w1-MI8" customClass="ViewController" customModule="Web3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="ne1-w1-MI8" customClass="Loginview_Controller" customModule="Web3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JNn-7F-28P">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nero-low-resolution-logo-color-on-transparent-background" translatesAutoresizingMaskIntoConstraints="NO" id="mUk-iL-8vZ">
@@ -159,7 +192,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Forgot Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35b-2J-QJr">
                                 <rect key="frame" x="220" y="517" width="147" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.1647058874" green="0.3686274886" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.1607843041" green="0.3686274886" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -170,16 +203,42 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Login">
                                     <color key="baseForegroundColor" red="0.1647058874" green="0.3686274886" blue="0.38431376220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginclicked:" destination="ne1-w1-MI8" eventType="touchUpInside" id="04i-7A-iNR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Xb-MR-9fQ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JCf-tw-Frr"/>
+                    <connections>
+                        <outlet property="emailtextfield" destination="w4F-aH-fWx" id="xSD-UG-VEU"/>
+                        <outlet property="passwordtexfield" destination="KOc-Ca-KRA" id="6b9-fv-OlA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fai-n1-sek" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="-670"/>
+            <point key="canvasLocation" x="991.60305343511448" y="-670.42253521126759"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aGy-Mo-1ko">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="w7S-qI-cnc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbI-3c-mDK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dW9-vZ-8KG" kind="relationship" relationship="viewControllers" id="eYs-IJ-OBD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMu-rZ-QxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719.84732824427476" y="-216.90140845070422"/>
         </scene>
     </scenes>
     <resources>

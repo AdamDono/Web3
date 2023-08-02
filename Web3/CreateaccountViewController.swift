@@ -9,10 +9,14 @@ import UIKit
 
 class CreateaccountViewController: UIViewController {
 
+    @IBOutlet weak var signuptextfield: UITextField!
+    @IBOutlet weak var signuppasswordtextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func signupclicked(_ sender: UIButton) {
     }
     
 
