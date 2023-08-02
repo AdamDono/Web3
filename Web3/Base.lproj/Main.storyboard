@@ -82,6 +82,7 @@
                     <connections>
                         <outlet property="signuppasswordtextfield" destination="yW7-An-WQA" id="EVy-k6-W61"/>
                         <outlet property="signuptextfield" destination="Mq7-6v-ah5" id="h6G-v2-U1F"/>
+                        <segue destination="AoD-ti-aq1" kind="show" identifier=" " id="4aH-ee-DUl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,15 +94,16 @@
             <objects>
                 <viewController id="AoD-ti-aq1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYz-bs-5Jy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8Ay-pJ-lWu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0WM-UF-us8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMF-G1-JBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2311" y="517"/>
+            <point key="canvasLocation" x="1963" y="-217"/>
         </scene>
         <!--Animation-->
         <scene sceneID="P77-VW-5yq">
@@ -216,6 +218,7 @@
                     <connections>
                         <outlet property="emailtextfield" destination="w4F-aH-fWx" id="xSD-UG-VEU"/>
                         <outlet property="passwordtexfield" destination="KOc-Ca-KRA" id="6b9-fv-OlA"/>
+                        <segue destination="AoD-ti-aq1" kind="show" id="Utw-U9-zqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fai-n1-sek" sceneMemberID="firstResponder"/>
@@ -241,6 +244,9 @@
             <point key="canvasLocation" x="-719.84732824427476" y="-216.90140845070422"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Utw-U9-zqQ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="key" catalog="system" width="85" height="128"/>
         <image name="nero-low-resolution-logo-color-on-transparent-background" width="1000" height="1125"/>

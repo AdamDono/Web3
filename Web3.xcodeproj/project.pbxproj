@@ -17,8 +17,8 @@
 		08F5EA682A7A387E002CE0D5 /* lotti anae in Resources */ = {isa = PBXBuildFile; fileRef = 08F5EA672A7A387E002CE0D5 /* lotti anae */; };
 		08F5EA6C2A7A4588002CE0D5 /* Loginview Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F5EA6B2A7A4588002CE0D5 /* Loginview Controller.swift */; };
 		08F5EA6E2A7A4990002CE0D5 /* CreateaccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F5EA6D2A7A4990002CE0D5 /* CreateaccountViewController.swift */; };
-		08F5EA702A7A607C002CE0D5 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 08F5EA6F2A7A607C002CE0D5 /* GoogleService-Info (1).plist */; };
 		08F5EA732A7A61C0002CE0D5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 08F5EA722A7A61C0002CE0D5 /* FirebaseAuth */; };
+		08F5EA772A7A66EE002CE0D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08F5EA762A7A66EE002CE0D5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		08F5EA672A7A387E002CE0D5 /* lotti anae */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "lotti anae"; path = "../../../../lotti anae"; sourceTree = "<group>"; };
 		08F5EA6B2A7A4588002CE0D5 /* Loginview Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loginview Controller.swift"; sourceTree = "<group>"; };
 		08F5EA6D2A7A4990002CE0D5 /* CreateaccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateaccountViewController.swift; sourceTree = "<group>"; };
-		08F5EA6F2A7A607C002CE0D5 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		08F5EA762A7A66EE002CE0D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				08F5EA4C2A78F9B2002CE0D5 /* AppDelegate.swift */,
-				08F5EA6F2A7A607C002CE0D5 /* GoogleService-Info (1).plist */,
 				08F5EA4E2A78F9B2002CE0D5 /* SceneDelegate.swift */,
 				08F5EA502A78F9B2002CE0D5 /* ViewController.swift */,
 				08F5EA522A78F9B2002CE0D5 /* Main.storyboard */,
@@ -79,6 +78,7 @@
 				08F5EA672A7A387E002CE0D5 /* lotti anae */,
 				08F5EA572A78F9B3002CE0D5 /* LaunchScreen.storyboard */,
 				08F5EA5A2A78F9B3002CE0D5 /* Info.plist */,
+				08F5EA762A7A66EE002CE0D5 /* GoogleService-Info.plist */,
 			);
 			path = Web3;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			files = (
 				08F5EA592A78F9B3002CE0D5 /* LaunchScreen.storyboard in Resources */,
 				08F5EA562A78F9B3002CE0D5 /* Assets.xcassets in Resources */,
-				08F5EA702A7A607C002CE0D5 /* GoogleService-Info (1).plist in Resources */,
+				08F5EA772A7A66EE002CE0D5 /* GoogleService-Info.plist in Resources */,
 				08F5EA542A78F9B2002CE0D5 /* Main.storyboard in Resources */,
 				08F5EA682A7A387E002CE0D5 /* lotti anae in Resources */,
 			);

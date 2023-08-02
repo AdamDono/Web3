@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateaccountViewController: UIViewController {
 
@@ -17,6 +18,23 @@ class CreateaccountViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func signupclicked(_ sender: UIButton) {
+        guard let username = signuptextfield.text else {return }
+        guard let password = signuppasswordtextfield.text else {return}
+        
+        Auth.auth().createUser(withEmail: username, password: password) { firebaseresult, error in
+            if let e = error {
+                
+                print( "error")
+                
+            }
+            else {
+                //go to home screen
+                
+                
+            }
+                                                                                                        
+            
+        }
     }
     
 
